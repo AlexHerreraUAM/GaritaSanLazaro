@@ -88,6 +88,7 @@
     </style>
 </head>
 <body>
+	<audio id="musicaFondo" src="musica.mp3" loop muted></audio>
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4E342E;">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Ex Garita de San Lázaro</a>
@@ -99,27 +100,36 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
 
-        <li class="nav-item">
-          <a class="nav-link" href="#stopmotion">Stop Motion</a>
-        </li>
+        <ul class="navbar-nav ms-auto">
 
-        <li class="nav-item">
-          <a class="nav-link" href="#documental">Documental</a>
-        </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#stopmotion">Stop Motion</a>
+  </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#reels">Reels</a>
-        </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#documental">Documental</a>
+  </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#podcast">Podcast</a>
-        </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#reels">Reels</a>
+  </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#galeria">Galería</a>
-        </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#podcast">Podcast</a>
+  </li>
 
-      </ul>
+  <li class="nav-item">
+    <a class="nav-link" href="#galeria">Galería</a>
+  </li>
+
+</ul>
+
+<!-- BOTÓN DE MÚSICA -->
+<button id="btnMusica" class="btn btn-sm" 
+        style="background-color: var(--rojo); color:white; margin-left:15px;">
+    🔇 Música
+</button>
+		  </ul>
     </div>
   </div>
 </nav>
@@ -150,7 +160,7 @@
             <h3 class="mb-3">Animación en Stop Motion</h3>
 
             <div class="ratio ratio-16x9">
-                <iframe 
+              <iframe 
                     src="https://www.youtube.com/embed/L6MM2IA5isQ" 
                     title="Stop Motion"
                     allowfullscreen>
@@ -164,7 +174,7 @@
     </div>
 </section>
 
-    <section id="documental" class="py-5" style="background-color: var(--blanco-hueso);">
+<section id="documental" class="py-5" style="background-color: var(--blanco-hueso);">
     <div class="container">
         <h2 class="text-center mb-4" style="color: var(--rojo); font-weight: bold;">Documental</h2>
 
@@ -188,7 +198,7 @@
         <div class="card card-custom p-4">
             <h3 class="mb-3">Podcast en Equipo</h3>
             <audio controls class="w-100">
-                <source src="PODCAST.mp3" type="audio/mpeg">
+              <source src="PODCAST.mp3" type="audio/mpeg">
                 Tu navegador no soporta el elemento de audio.
             </audio>
             <p class="mt-2 text-muted">Escucha las voces que reconstruyeron la historia.</p>
@@ -205,7 +215,7 @@
         <div class="card card-custom p-4">
             <h3 class="mb-4">Proceso de Restauración</h3>
 
-            <div class="row g-4 justify-content-center">
+          <div class="row g-4 justify-content-center">
 
                 <!-- Reel 1 -->
                 <div class="col-md-4 col-12 d-flex justify-content-center">
@@ -217,7 +227,7 @@
                         border-radius: 12px;
                         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
                     ">
-                        <iframe 
+                      <iframe 
                             src="https://www.youtube.com/embed/kpIKCX88Dzw"
                             title="Reel 1"
                             frameborder="0"
@@ -237,7 +247,7 @@
                         border-radius: 12px;
                         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
                     ">
-                        <iframe 
+                      <iframe 
                             src="https://www.youtube.com/embed/4CFSCk75HEA"
                             title="Reel 2"
                             frameborder="0"
@@ -249,7 +259,7 @@
 
                 <!-- Reel 3 -->
                 <div class="col-md-4 col-12 d-flex justify-content-center">
-                    <div style="
+                  <div style="
                         width: 100%;
                         max-width: 350px;
                         aspect-ratio: 9/16;
@@ -267,13 +277,13 @@
                     </div>
                 </div>
 
-            </div>
+          </div>
         </div>
     </div>
 </section>
 
-          <section id="galeria" class="py-5" style="background-color: var(--blanco-hueso);">
-    <div class="container">
+<section id="galeria" class="py-5" style="background-color: var(--blanco-hueso);">
+  <div class="container">
         <h2 class="text-center mb-4" style="color: var(--rojo); font-weight: bold;">Galería</h2>
 
         <div class="card card-custom p-4">
@@ -281,19 +291,19 @@
 
             <div class="row g-3">
                 <div class="col-md-4 col-6">
-                    <img src="1.jpg" class="img-fluid rounded" alt="Vista de la Ex Garita de San Lázaro 1">
+                    <img src="1.JPG" class="img-fluid rounded" alt="Vista de la Ex Garita de San Lázaro 1">
                 </div>
                 <div class="col-md-4 col-6">
-                    <img src="2.jpg" class="img-fluid rounded" alt="Vista de la Ex Garita de San Lázaro 2">
+                    <img src="2.JPG" class="img-fluid rounded" alt="Vista de la Ex Garita de San Lázaro 2">
                 </div>
                 <div class="col-md-4 col-6">
-                   <img src="3.jpg" class="img-fluid rounded" alt="Vista de la Ex Garita de San Lázaro 3">
+                   <img src="3.JPG" class="img-fluid rounded" alt="Vista de la Ex Garita de San Lázaro 3">
                 </div>
                 <div class="col-md-4 col-6">
-                    <img src="4.jpg" class="img-fluid rounded" alt="Vista de la Ex Garita de San Lázaro 4">
+                    <img src="4.JPG" class="img-fluid rounded" alt="Vista de la Ex Garita de San Lázaro 4">
                 </div>
                 <div class="col-md-4 col-6">
-                    <img src="5.jpg" class="img-fluid rounded" alt="Vista de la Ex Garita de San Lázaro 5">
+                    <img src="5.JPG" class="img-fluid rounded" alt="Vista de la Ex Garita de San Lázaro 5">
                 </div>
             </div>
         </div>
@@ -301,7 +311,7 @@
 </section>
 
 	<section style="background:black; color:white; padding:120px 0; text-align:center;">
-    <h1 style="font-size:4rem; letter-spacing:4px;">GRACIAS</h1>
+    <h1 style="font-size:4rem; letter-spacing:4px;">Esperamos tu visita! 🤗🤗</h1>
 </section>
 
 	
@@ -330,10 +340,10 @@
                     <p class="small opacity-50">Proyecto de la Asignatura de Multimedia © 2026</p>
                 </div>
             </div>
-        </div>
-    </footer>
+      </div>
+</footer>
 
-    <script>
+<script>
         function revelarContenidos() {
             const seccion = document.getElementById('seccion-contenidos');
             seccion.style.display = 'block';
@@ -343,5 +353,35 @@
             });
         }
     </script>
+	<script>
+    const audio = document.getElementById('musicaFondo');
+    const btn = document.getElementById('btnMusica');
+
+    // Autoplay silencioso permitido por navegador
+    window.addEventListener('load', () => {
+        audio.play().catch(() => {
+            console.log("Autoplay bloqueado, esperando interacción del usuario");
+        });
+    });
+
+    // Activar sonido automáticamente en el primer clic del usuario
+    document.addEventListener('click', function activarSonido() {
+        audio.muted = false;          // Activamos sonido
+        btn.textContent = "🔊 Música"; // Actualizamos botón
+        document.removeEventListener('click', activarSonido);
+    });
+
+    // Botón Play/Pause manual
+    btn.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.muted = false;
+            audio.play();
+            btn.textContent = "🔊 Música";
+        } else {
+            audio.pause();
+            btn.textContent = "🔇 Música";
+        }
+    });
+</script>
 </body>
 </html>
