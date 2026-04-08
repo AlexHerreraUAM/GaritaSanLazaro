@@ -18,6 +18,7 @@
             background-color: var(--beige);
             color: var(--cafe);
             scroll-behavior: smooth;
+			padding-top: 60px; /* Ajusta según la altura de tu navbar */
         }
 
         /* Estilo Hero */
@@ -89,7 +90,7 @@
 </head>
 <body>
 	<audio id="musicaFondo" src="musica.mp3" loop muted></audio>
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4E342E;">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #4E342E;">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Ex Garita de San Lázaro</a>
 
@@ -139,6 +140,35 @@
         <p>"Nadie protege lo que desconoce"</p>
     </header>
 
+	<nav id="subMenu" class="navbar navbar-expand-lg navbar-dark" 
+     style="background-color: var(--cafe); display:none; border-bottom: 4px solid var(--rojo);">
+  <div class="container-fluid justify-content-center">
+    <ul class="navbar-nav">
+
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="#stopmotion">Stop Motion</a>
+      </li>
+
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="#documental">Documental</a>
+      </li>
+
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="#reels">Reels</a>
+      </li>
+
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="#podcast">Podcast</a>
+      </li>
+
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="#galeria">Galería</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+	
     <section class="contexto" id="contexto">
         <div class="container">
             <h2>Contexto del Proyecto</h2>
@@ -146,10 +176,8 @@
                 Ubicada en un punto estratégico de la Ciudad de México, la Ex Garita de San Lázaro ha sido testigo de siglos de transformación urbana. 
                 A través de un riguroso proceso de restauración, buscamos rescatar la memoria histórica y devolver la vida a este recinto patrimonial.
             </p>
-            <button class="btn btn-interactivo" onclick="revelarContenidos()">Explorar Contenidos</button>
         </div>
     </section>
-
 <section id="stopmotion" class="py-5" style="background-color: var(--blanco-hueso);">
     <div class="container">
         <h2 class="text-center mb-4" style="color: var(--rojo); font-weight: bold;">
@@ -383,5 +411,20 @@
         }
     });
 </script>
+	<script>
+function revelarContenidos() {
+    const seccion = document.getElementById('seccion-contenidos');
+    const subMenu = document.getElementById('subMenu');
+
+    seccion.style.display = 'block';
+    subMenu.style.display = 'flex';
+
+    window.scrollTo({
+        top: subMenu.offsetTop,
+        behavior: 'smooth'
+    });
+}
+</script>
+
 </body>
 </html>
